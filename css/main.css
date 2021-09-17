@@ -128,14 +128,20 @@ button {
   color: #666666;
   text-align: left;
   padding: 15px;
+  position: relative;
+  padding-right: 30px;
 }
 #accordians .accordian-container button.accordion:after {
-  font-family: FontAwesome;
   content: "\f078";
-  font-family: "fontawesome";
+  font-family: fontawesome;
   font-size: 18px;
   float: right;
+  -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 #accordians .accordian-container button.accordion.open:after {
   transform: rotate(180deg);

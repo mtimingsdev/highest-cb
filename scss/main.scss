@@ -132,14 +132,20 @@ button{
             color: #666666;
             text-align: left;
             padding: 15px;
+            position: relative;
+            padding-right: 30px;
 
             &:after {
-                font-family: FontAwesome;
                 content: "\f078";
-                font-family: "fontawesome";
+                font-family: fontawesome;
                 font-size: 18px;
                 float: right;
+                -webkit-transition: all .3s linear;
                 transition: all .3s linear;
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
             }
 
             &.open:after {
